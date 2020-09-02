@@ -5,12 +5,14 @@
   <meta charset="utf-8">
   <title>Texas Tech University Health Sciences Center</title>
   <link rel="stylesheet" href="stylesheets/main.css">
+  <link rel="stylesheet" href="stylesheets/aos.css">
   <link rel="stylesheet" href="sass/landing-page.min.css">
   <!--OU - styles specific to the landing pages - use with the global styles that already exist -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <!--OU - make sure template has landingpage and microsite classes -->
 <body class="microsite landingpage">
+  <div id="transcroller-body" class="aos-all">
   <!-- Header -->
   <header class="banner container-fluid" role="banner">
     <div class="container">
@@ -45,7 +47,7 @@
       </div>
     </div>
   </section>
-  <section id="program-info" class="img-grid right">
+  <section id="program-info" class="img-grid right aos-item" data-aos="zoom-in-up" data-aos-duration="1000">
     <div class="container-fluid">
       <div class="row no-gutter table-cell">
         <div class="col-xs-12 col-md-7 img">
@@ -64,7 +66,7 @@
     </div>
   </section>
 
-  <section id="feat-learning" class="red">
+  <section id="feat-learning" class="red" data-aos="zoom-in-up" data-aos-duration="1000">
     <div class="container-fluid">
       <div class="row">
         <div class="col-xs-12 col-md-8 col-md-push-4 video-row text-center">
@@ -87,7 +89,7 @@
     </div>
   </section>
 
-  <section id="facts-section" class="curriculum">
+  <section id="facts-section" class="curriculum" data-aos="zoom-in-up" data-aos-duration="1000">
     <div class="container">
       <div class="row">
         <div class="col-sm-12">
@@ -154,14 +156,14 @@
   </section>
 
   <!--OU - background color is a data point - Options are blue - #243746, green - #607D3B, dark red - #B11F2D, gray - #181818 -->
-  <section id="facts-section2" class="curriculum numbers" style="background-color: #607d3b;">
+  <section id="facts-section2" class="curriculum numbers" style="background-color: #607d3b;" data-aos="zoom-in-up" data-aos-duration="1000">
     <div class="container">
       <div class="row">
         <div class="col-xs-12 col-md-4">
           <div class='factoid'>
             <div class="icon-container">
               <!--OU - 2 data pooints here - number and symbol -->
-              <div class="n-title">91<span class="symbol">%</span></div>
+              <div class="n-title"><span class="counter">91</span><span class="symbol">%</span></div>
             </div>
             <div class="text-container">
               <div class="n-title2">Pass Rate</div>
@@ -173,7 +175,7 @@
           <div class='factoid'>
             <div class="icon-container">
               <!--OU - 2 data pooints here - number and symbol -->
-              <div class="n-title">92<span class="symbol">%</span></div>
+              <div class="n-title"><span class="counter">92</span><span class="symbol">%</span></div>
             </div>
             <div class="text-container">
               <div class="n-title2">Graduation Rate</div>
@@ -185,7 +187,7 @@
           <div class='factoid'>
             <div class="icon-container">
               <!--OU - 2 data pooints here - number and symbol -->
-              <div class="n-title">99<span class="symbol">%</span></div>
+              <div class="n-title"><span class="counter">99</span><span class="symbol">%</span></div>
             </div>
             <div class="text-container">
               <div class="n-title2">Employment Rate</div>
@@ -197,7 +199,7 @@
     </div>
   </section>
 
-  <section id="program-info2" class="img-grid left">
+  <section id="program-info2" class="img-grid left" data-aos="zoom-in-up" data-aos-duration="1000">
     <div class="container-fluid">
       <div class="row no-gutter table-cell">
         <div class="col-xs-12 col-md-8 img" style="background-image:url('images/landing-page-images/layer@2x.jpg');background-size:cover;background-position:right top;">
@@ -220,7 +222,7 @@
   </section>
 
   <!--OU - background color is a data point - Options are blue - #243746, green - #607D3B, dark red - #B11F2D, gray - #181818 -->
-  <section id="dates-section" class="curriculum numbers" style="background-color: #243746;">
+  <section id="dates-section" class="curriculum numbers" style="background-color: #243746;" data-aos="zoom-in-up" data-aos-duration="1000">
     <div class="container">
       <div class="row">
         <div class="col-xs-12 col-md-4">
@@ -265,7 +267,7 @@
   </section>
 
 
-  <section id="potential">
+  <section id="potential" data-aos="zoom-in-up" data-aos-duration="1000">
     <div class="container-fluid">
       <div class="row no-gutter table-cell">
         <div class="col-xs-12 col-md-7 img">
@@ -289,7 +291,7 @@
     </div>
   </section>
 
-  <section id="contact-grid">
+  <section id="contact-grid" data-aos="zoom-in-up" data-aos-duration="1000">
     <div class="container">
       <div class="row">
         <div class="col-xs-12 col-sm-7 col-md-push-5">
@@ -399,6 +401,27 @@
   <script src="javascripts/global.js"></script>
   <script src="javascripts/owl.carousel.js"></script>
   <script src="javascripts/microsite.js"></script>
+  <script src="javascripts/counterup.js"></script>
+  <script src="javascripts/aos.js"></script>
+  <script>
+      AOS.init({
+        easing: 'ease-in-out-sine'
+      });
+    </script>
+
+    <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/require.js/2.1.11/require.min.js"></script>
+    <script>
+      requirejs.config({
+          baseUrl: '../dist',
+      });
+
+      require(['aos'], function(AOS){
+          AOS.init({
+              easing: 'ease-in-out-sine'
+          });
+      });
+    </script> -->
+</div>
 </body>
 
 </html>

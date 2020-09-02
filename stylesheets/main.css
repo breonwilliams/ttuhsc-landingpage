@@ -8542,3 +8542,7 @@ a.facebook {
 		outline-offset: -3px;
 	}
 }
+
+.hideme {
+    opacity:0;
+}

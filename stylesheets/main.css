@@ -5478,6 +5478,16 @@ nav.breadcrumb [aria-current="page"] {
       font-weight: 500;
       line-height: 1.2; }
 
+body.landingpage #facts-section2.curriculum .factoid .icon-container {
+  min-height: 260px;
+}
+
+.border-0        { border: 0 !important; }
+.border-top-0    { border-top: 0 !important; }
+.border-right-0  { border-right: 0 !important; }
+.border-bottom-0 { border-bottom: 0 !important; }
+.border-left-0   { border-left: 0 !important; }
+
 /*
 *** FORM COMPONENT ***
 */
@@ -5849,6 +5859,11 @@ body.microsite .img-section {
       .img-grid .text-wrap .text {
         min-height: 20rem; } }
 
+.img-resize {
+  height: auto!important;
+  min-height: auto!important;
+  position: initial!important;
+}
 /*
 *** NEWS & EVENTS COMPONENT ***
 */
